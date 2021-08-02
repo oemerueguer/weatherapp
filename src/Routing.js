@@ -1,25 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import Home from "./components/Home";
-import Search from "./components/Search";
+import About from "./components/About";
 import Weather from "./components/Weather";
+import Footer from "./components/Footer";
 
 export default function Routing() {
   return (
     <div>
-      <Router>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/">
-            <Search />
+          <Route exact path="/home">
+            <Home />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/weather">
             <Weather />
           </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
         </Switch>
-      </Router>
+      <Footer />
     </div>
   );
 }
