@@ -1,5 +1,64 @@
+.FooterNavigation {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  bottom: 0;
+}
+
 .FooterNav {
-    display: flex;
-    justify-content: space-around;
-    
+  display: flex;
+  position: relative;
+  margin-top: 3%;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+}
+.Footer-Item {
+  position: relative;
+  width: 10%;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.Footer-Item:before,
+.Footer-Item:after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+.Footer-Item:before {
+  border-top: 2px solid white;
+  right: 0;
+  top: -4px;
+}
+.Footer-Item:after {
+  border-bottom: 2px solid white;
+  bottom: -4px;
+  left: 0;
+}
+
+.Footer-Item:hover:before,
+.Footer-Item:hover:after {
+  width: 100%;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+.copy {
+  padding-right: 0.5% !important;
+}
+.fas,
+.fab,
+.far {
+  padding-right: 2%;
 }

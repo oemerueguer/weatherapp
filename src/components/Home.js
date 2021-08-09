@@ -39,10 +39,11 @@ const useStyles = makeStyles((theme) => ({
   TextContent: {
     width: "52%",
     textAlign: "center",
+    padding: "3%",
   },
   SearchBtn: {
     width: "25%",
-    marginLeft: "0%",
+    marginLeft: "10%",
     border: "2px solid white",
     cursor: "pointer",
     padding: '1%',
@@ -51,6 +52,14 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     backgroundColor: "white",
     color: "black",
+  },
+  Heading: {
+    paddingLeft: "10%",
+    paddingRight: "10%",
+  },
+  Paragraph: {
+    paddingLeft: "2%",
+    paddingRight: "2%",
   },
 }));
 
@@ -64,16 +73,16 @@ export default function Home() {
         <div className={`${classes.bgImage}`}>
           <Box className={classes.WeatherImage} xs={12} sm={12} md={6}></Box>
           <Box className={classes.TextContent} xs={12} sm={12} md={6}>
-            <h2>Welcome to our Weather App</h2>
-            <p>
-              With clicking on Search, you are able to search for the Weather forecast in your city.<br/>
+            <h2 className={`${classes.Heading}`}>Welcome to our Weather App</h2>
+            <p className={`${classes.Paragraph}`}>
+              Click on Search to see the Weather forecast in your desired city.<br/>
               Make your journey enjoyable!
             </p>
             <Link
               to="/weather"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <div className={classes.SearchBtn}>Search for a city</div>
+              <div className={classes.SearchBtn}><i className="fas fa-search"/>Search for a city</div>
             </Link>
           </Box>
         </div>
