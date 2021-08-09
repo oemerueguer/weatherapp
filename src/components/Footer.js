@@ -14,7 +14,7 @@ export default function Footer() {
               Back Home
             </li>
           </Link>
-          {/* <a href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
+          {/* <a href="https://de.linkedin.com/in/oemer-ueguer" target="_blank" className="Footer-Item">
             <li>
               <i className="fab fa-linkedin"></i>LinkedIn
             </li>
