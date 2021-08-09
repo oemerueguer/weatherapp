@@ -1,45 +1,92 @@
+.WeatherHeading {
+    text-align: center;
+}
 .WeatherContent {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-}
-.WeatherLeft {
-    width: 100%;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 0 auto;
 }
 .InputContent {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .CityName,
 .CountryName {
     background-color: white;
     color: black;
+    height: 50%;
     border: 2px solid white;
     border-radius: 20px;
     margin-left: 3%;
     margin-right: 5%;
     margin-bottom: 4% !important;
-    padding: 2%;
-    text-align: center;
+    padding: 0.5%;
 }
 .CountryName{
     min-width: 100px !important;
     margin-bottom: 4%;
     text-align: center;
 }
+.TempContent {
+    display: flex;
+    margin: 0 auto;
+}
 .TempArea {
-    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
     background: white;
     color: black;
     border-radius: 20px;
     padding: 1%;
+    margin-right: 2%;
     margin-bottom: 4%;
     text-align: center;
 }
 .Temp {
     background: white;
     color: black;
+}
+.GoBackBtn {
+    position: relative;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5%;
+    outline: none;
+}
+.GoBackBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+    .WeatherContent {
+        display: block;
+    }
+    .InputContent {
+        display: block;
+    }
+    .CountryName{
+        margin-bottom: 8%;
+    }
+    .TempContent {
+        display: block;
+        margin: 0 auto;
+    }
+    .TempArea {
+        width: 90vw;
+        margin-right: 0;
+        margin-left: 2%;
+    }
 }

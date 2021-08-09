@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 export default function Routing() {
   return (
+    <>
     <div>
         <Switch>
           <Route exact path="/">
@@ -26,7 +27,8 @@ export default function Routing() {
             <About />
           </Route>
         </Switch>
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 }

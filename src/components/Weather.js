@@ -32,7 +32,6 @@ const Weather = () => {
       .catch((err) => console.log(err));
     setLoading(false);
   };
-  console.log(weather);
 
   return (
     <>
@@ -40,16 +39,17 @@ const Weather = () => {
         "Loading"
       ) : (
         <>
-        <h1>Actual weather condition in:</h1>
+          <h1 className="WeatherHeading">Actual weather condition</h1>
           <div className="WeatherContent">
-              <div className="InputContent">
-                <div className="CityName">
-                  {weather ? <h1>{weather.name}</h1> : "No City Name"}
-                </div>
-                <div className="CountryName">
-                  {weather ? <h1>{weather.sys.country}</h1> : "No Country Name"}
-                </div>
+            <div className="InputContent">
+              <div className="CityName">
+                {weather ? <h1>{weather.name}</h1> : "No City Name"}
               </div>
+              <div className="CountryName">
+                {weather ? <h1>{weather.sys.country}</h1> : "No Country Name"}
+              </div>
+            </div>
+            <div className="TempContent">
               <div className="TempArea">
                 <div className="Temp">
                   {weather ? (
@@ -90,8 +90,12 @@ const Weather = () => {
                 </div>
               </div>
             </div>
+          </div>
         </>
       )}
+      <Link className="GoBackBtn" to="/search">
+        <div>Go to Search</div>
+      </Link>
     </>
   );
 };
