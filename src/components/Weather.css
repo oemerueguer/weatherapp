@@ -1,0 +1,9 @@
+.WeatherContent {
+    position: relative;
+    display: flex;
+    background-color: red;
+}
+.InputContent {
+    display: flex;
+    flex-direction: column;
+}

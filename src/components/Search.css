@@ -1,0 +1,46 @@
+.SearchHeading{
+    text-align: center
+}
+.SearchContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.SearchField {
+    position: relative;
+    display: block;
+    width: 30%;
+    padding: 0.5%;
+    border: 2px solid white;
+    border-radius: 20px;
+    outline: none;
+}
+.SearchField:focus {
+    border: 2px solid black;
+}
+.SearchBtn {
+    position: relative;
+    margin-left: 1%;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+    background-color:#A53C3A;
+    border-radius: 20px;
+}
+.SearchBtn:hover {
+    background-color: #F4432F;
+}
+.HomeBtn {
+    position: relative;
+    margin-left: 1%;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+    background-color: #2B2D35;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.HomeBtn:hover {
+    background-color: white;
+    color: black;
+}

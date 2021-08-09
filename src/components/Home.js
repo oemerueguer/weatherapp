@@ -68,7 +68,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className={classes.marginAutoItem}>Weather App</h1>
+      <h1 className={classes.marginAutoItem}>The Weather Forecast</h1>
       <div className={classes.flexContainer} xs={12} sm={12} md={6}>
         <div className={`${classes.bgImage}`}>
           <Box className={classes.WeatherImage} xs={12} sm={12} md={6}></Box>
@@ -79,7 +79,7 @@ export default function Home() {
               Make your journey enjoyable!
             </p>
             <Link
-              to="/weather"
+              to="/search"
               style={{ textDecoration: "none", color: "black" }}
             >
               <div className={classes.SearchBtn}><i className="fas fa-search"/>Search for a city</div>

@@ -3,6 +3,7 @@ import { Switch, Route} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Weather from "./components/Weather";
+import Search from "./components/Search";
 import Footer from "./components/Footer";
 
 export default function Routing() {
@@ -14,6 +15,9 @@ export default function Routing() {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route exact path="/search">
+            <Search />
           </Route>
           <Route exact path="/weather">
             <Weather />

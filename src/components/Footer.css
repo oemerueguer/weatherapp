@@ -2,7 +2,7 @@
   display: block;
   position: absolute;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   background-color: black;
   bottom: 0;
 }
@@ -61,4 +61,5 @@
 .fab,
 .far {
   padding-right: 2%;
+  background-repeat: no-repeat;
 }
