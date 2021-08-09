@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -7,23 +8,23 @@ export default function Footer() {
     <div>
       <div className="FooterNavigation">
         <ul className="FooterNav">
-          <a href="/Home" className="Footer-Item">
+          <Link to="/home" className="Footer-Item">
             <li>
               <i className="fas fa-home" />
               Back Home
             </li>
-          </a>
-          <a href="/https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
+          </Link>
+          <Link href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
             <li>
               <i className="fab fa-linkedin"></i>LinkedIn
             </li>
-          </a>
-          <a href="https://github.com/oemerueguer" className="Footer-Item">
+          </Link>
+          <Link href="https://github.com/oemerueguer" className="Footer-Item">
             <li>
               <i className="fab fa-github-square" />
               Github Profile
             </li>
-          </a>
+          </Link>
         </ul>
         <div className="copyright">
           <i className="copy far fa-copyright" />
