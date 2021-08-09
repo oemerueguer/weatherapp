@@ -14,11 +14,12 @@ export default function Footer() {
               Back Home
             </li>
           </Link>
-          <a href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
+          {/* <a href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
             <li>
               <i className="fab fa-linkedin"></i>LinkedIn
             </li>
           </a>
+        */}
           <a href="https://github.com/oemerueguer" className="Footer-Item">
             <li>
               <i className="fab fa-github-square" />
