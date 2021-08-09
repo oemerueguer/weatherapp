@@ -12,7 +12,7 @@ const Search = () => {
 
   return (
     <>
-      <h1 className="SearchHeading">Search Cities and get the Forecast</h1>
+      <h1 className="SearchHeading">Search for your desired city</h1>
       <div className="SearchContent">
         <input
           className="SearchField"

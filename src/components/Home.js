@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     width: "100vw",
     heigth: '100vh',
-    margin: "0 auto",
+    margin: "5% auto",
   },
   bgImage: {
     display: "flex",

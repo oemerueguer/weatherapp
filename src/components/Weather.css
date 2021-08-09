@@ -1,9 +1,45 @@
 .WeatherContent {
     position: relative;
     display: flex;
-    background-color: red;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.WeatherLeft {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 .InputContent {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+}
+.CityName,
+.CountryName {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 4% !important;
+    padding: 2%;
+    text-align: center;
+}
+.CountryName{
+    min-width: 100px !important;
+    margin-bottom: 4%;
+    text-align: center;
+}
+.TempArea {
+    width: 400px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    padding: 1%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+.Temp {
+    background: white;
+    color: black;
 }

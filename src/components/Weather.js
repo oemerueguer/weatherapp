@@ -7,7 +7,7 @@ console.log(process.env);
 
 const Weather = () => {
   /* setting the states */
-  const [weatherCondition, setWeatherCondition] = useState();
+  const [weather, setWeather] = useState();
   const [loading, setLoading] = useState(false);
 
   /*to get the states from the input field, use useLocation() */
@@ -28,23 +28,70 @@ const Weather = () => {
     await Axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${values}&units=metric&APPID=${apiKey}`
     )
-      .then((res) => console.log(res.data))
+      .then((res) => setWeather(res.data))
       .catch((err) => console.log(err));
     setLoading(false);
   };
+  console.log(weather);
 
   return (
     <>
-      <div className="WeatherContent">
-        <div className="InputContent">
-          <div className="City">
-            <h1>CityName</h1>
-          </div>
-          <div className="CountryAbbreviation">
-            <p>City Abbreviation</p>
-          </div>
-        </div>
-      </div>
+      {loading ? (
+        "Loading"
+      ) : (
+        <>
+        <h1>Actual weather condition in:</h1>
+          <div className="WeatherContent">
+              <div className="InputContent">
+                <div className="CityName">
+                  {weather ? <h1>{weather.name}</h1> : "No City Name"}
+                </div>
+                <div className="CountryName">
+                  {weather ? <h1>{weather.sys.country}</h1> : "No Country Name"}
+                </div>
+              </div>
+              <div className="TempArea">
+                <div className="Temp">
+                  {weather ? (
+                    <h2>Temperature: {weather.main.temp} °C</h2>
+                  ) : (
+                    "No Temp."
+                  )}
+                  {weather ? (
+                    <h2>Feels like: {weather.main.feels_like} °C</h2>
+                  ) : (
+                    "No data"
+                  )}
+                </div>
+              </div>
+              <div className="TempArea">
+                <div className="Temp">
+                  {weather ? (
+                    <h2>Main: {weather.weather[0].main}</h2>
+                  ) : (
+                    "No Temp."
+                  )}
+                  {weather ? (
+                    <>
+                      <h2>{weather.weather[0].description}</h2>
+                      <img
+                        src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+                        alt="Weather Icon"
+                      />
+                    </>
+                  ) : (
+                    "No data"
+                  )}
+                  {weather ? (
+                    <h2>Humidity: {weather.main.humidity}</h2>
+                  ) : (
+                    "No data"
+                  )}
+                </div>
+              </div>
+            </div>
+        </>
+      )}
     </>
   );
 };
