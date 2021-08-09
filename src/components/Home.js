@@ -12,9 +12,10 @@ export default function Home() {
           <div className="TextContent">
             <h2 className="Heading">Welcome to our Weather App</h2>
             <p className="Paragraph">
-              The Weather Forecast provides you with actual weather conditions of your searched city.
+              The Weather Forecast provides you with actual weather conditions <br/> of your searched city.
               <br/>
               Click on the search button.
+              <br />
               <br />
               Make your journey enjoyable!
             </p>
