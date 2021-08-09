@@ -14,17 +14,17 @@ export default function Footer() {
               Back Home
             </li>
           </Link>
-          <Link href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
+          <a href="https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
             <li>
               <i className="fab fa-linkedin"></i>LinkedIn
             </li>
-          </Link>
-          <Link href="https://github.com/oemerueguer" className="Footer-Item">
+          </a>
+          <a href="https://github.com/oemerueguer" className="Footer-Item">
             <li>
               <i className="fab fa-github-square" />
               Github Profile
             </li>
-          </Link>
+          </a>
         </ul>
         <div className="copyright">
           <i className="copy far fa-copyright" />
