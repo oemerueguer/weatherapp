@@ -13,9 +13,9 @@ export default function Footer() {
               Back Home
             </li>
           </a>
-          <a href="/about" className="Footer-Item">
+          <a href="/https://de.linkedin.com/in/oemer-ueguer" className="Footer-Item">
             <li>
-              <i className="far fa-address-card"></i>About Me
+              <i className="fab fa-linkedin"></i>LinkedIn
             </li>
           </a>
           <a href="https://github.com/oemerueguer" className="Footer-Item">

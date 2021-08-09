@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Image from "./img/weather.jpg";
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
             </p>
             <Link
               to="/search"
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "black"}}
             >
               <div className="GoSearchBtn">
                 <i className="fas fa-search" />

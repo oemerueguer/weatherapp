@@ -26,7 +26,7 @@
     background-image: url('./img/weather.jpg');
   }
   .TextContent {
-    width: 52%;
+    width: 51%;
     text-align: center;
     padding: 3%;
   }
@@ -52,6 +52,20 @@
     padding-right: 2%;
   }
 
-  @media (min-width: 320px) and (max-width: 680px) {
-      
+  @media (min-width: 320px) and (max-width: 800px) {
+      .bgImage {
+          display: block;
+          width: 100vw;
+      }
+      .WeatherImage {
+          width: 100%;
+      }
+      .TextContent {
+          width: 100%;
+          padding: 0;
+      }
+      .GoSearchBtn {
+          width: 50%;
+          margin: 0 auto;
+      }
   }

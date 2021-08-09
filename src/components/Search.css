@@ -10,10 +10,11 @@
     position: relative;
     display: block;
     width: 30%;
-    padding: 0.5%;
+    padding: 1%;
     border: 2px solid white;
     border-radius: 20px;
     outline: none;
+    font-weight: bold;
 }
 .SearchField:focus {
     border: 2px solid black;
@@ -21,7 +22,7 @@
 .SearchBtn {
     position: relative;
     margin-left: 1%;
-    padding: 2%;
+    padding: 1%;
     text-decoration: none;
     color: white;
     background-color:#A53C3A;
@@ -33,7 +34,7 @@
 .HomeBtn {
     position: relative;
     margin-left: 1%;
-    padding: 2%;
+    padding: 1%;
     text-decoration: none;
     color: white;
     background-color: #2B2D35;
@@ -43,4 +44,27 @@
 .HomeBtn:hover {
     background-color: white;
     color: black;
+}
+
+@media (min-width: 320px) and (max-width: 800px) { 
+    .SearchContent {
+        display: block;
+    }   
+    .SearchField {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .SearchBtn {
+        display: block;
+        width: 50%;
+        margin: 2% auto;
+        text-align: center;
+    }
+    .HomeBtn {
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 2% auto;
+    }
 }

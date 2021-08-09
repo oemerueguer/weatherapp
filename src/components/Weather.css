@@ -70,7 +70,7 @@
     color: black;
 }
 
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 800px) {
     .WeatherContent {
         display: block;
     }
