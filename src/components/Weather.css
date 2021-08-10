@@ -70,12 +70,15 @@
     color: black;
 }
 
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 730px) {
     .WeatherContent {
         display: block;
     }
     .InputContent {
         display: block;
+    }
+    .CityName h1{
+        text-align: center;
     }
     .CountryName{
         margin-bottom: 8%;
@@ -89,4 +92,17 @@
         margin-right: 0;
         margin-left: 2%;
     }
+    .GoBackBtn {
+        width: 40%;
+        margin-top: 50%;
+        margin-bottom: 20%;
+    }
+}
+@media (min-width: 731px) and (max-width: 900px) { 
+    .GoBackBtn {
+        width: 40%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
 }
